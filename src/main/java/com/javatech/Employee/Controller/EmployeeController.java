@@ -31,7 +31,7 @@ public class EmployeeController {
         EmployeeMmDTO employeeMmDTO = modelMapper.map(employee, EmployeeMmDTO.class);
         return employeeMmDTO;
     }
-    @PostMapping("/add")
+    @PostMapping("/addemp")
     public  String addEmployee(@RequestBody Employee employee){
         return employeeService.addEmployee(employee);
     }
